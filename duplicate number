@@ -1,12 +1,14 @@
 
 class Solution {
-    String removeDups(String S) {
-        // code here
+    String removeDups(String S) 
+      { 
         char c[] = S.toCharArray();
 String trgt= "";
 
-for(char val: c){
-if(trgt.indexOf(val) == -1){
+for(char val: c)
+{
+if(trgt.indexOf(val) == -1)
+{
 trgt += val;
 }
 }
