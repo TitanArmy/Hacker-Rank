@@ -1,1 +1,26 @@
-
+import java.util.HashSet;
+class name{
+    public static void main(String [] args){
+      int [] arr1 ={1,2,3,4,5};
+      int [] arr2= {2,3,4,56,6};
+      HashSet<Integer>hs1 = new HashSet<>();
+      HashSet<Integer>hs2 = new HashSet<>();
+      for (int no:arr1)
+      {
+          hs1.add(no);
+      }
+      for(int no:arr2)
+      {
+          hs2.add(no);
+      }
+      for(int no:hs2)
+      {
+          boolean b =hs1.add(no);
+          if (b==false)
+          {
+              System.out.print(no +",");
+          }
+      }
+    }
+    
+}
